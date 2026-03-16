@@ -11,21 +11,45 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-   <div class="container text-center my-5">
-    <form>
-        <label>Radius:</label>
-        <input type="number" id="one">
-        <label>Area:</label>
-        <input type="number" id="two"readonly>
-        <button type="button" onclick=" ()"Area>
-        <button type="button" class="btn btn-success" onclick="window.location.reload()">Refresh</button>
-     </form>
-    
-        
-        
+  
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Circle Area Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculator">
+        <h2>Circle Area Calculator</h2>
+        <div class="circle-diagram">
+            <div class="circle">
+                <div class="labels">
+                    <span class="radius">Radius</span>
+                    <span class="diameter">Diameter</span>
+                    <span class="circumference">Circumference</span>
+                </div>
+            </div>
+        </div>
 
-    
+        <div class="input-group">
+            <label for="base">Base:</label>
+            <input type="number" id="base" placeholder="Enter base">
+        </div>
 
+        <div class="input-group">
+            <label for="height">Height:</label>
+            <input type="number" id="height" placeholder="Enter height">
+        </div>
+
+        <div class="input-group">
+            <label for="output">Area:</label>
+            <input type="text" id="output" readonly>
+        </div>
+
+        <div class="buttons">
+            <button onclick="compute_area()">Calculate</button>
+            <button onclick="location.reload()">Refresh</button>
+        </div>
     <script src="main.js"></script>
 </body>
 </html>
